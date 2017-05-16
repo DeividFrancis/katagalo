@@ -6,7 +6,7 @@
   "description": "site de tema livre do curso de sistemas de informaçao",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "katagalo.com.br",
   "private": true,
   "ignore": [
     "**/.*",
@@ -14,5 +14,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "font-awesome": "^4.7.0",
+    "breakpoint": "^4.6.4",
+    "bootstrap-sass": "^3.3.7"
+  }
 }
