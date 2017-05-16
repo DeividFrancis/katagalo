@@ -1,0 +1,18 @@
+{
+  "name": "katagalo",
+  "authors": [
+    "Deivd Francis <deividfrancisdeoliveira@gmail.com>"
+  ],
+  "description": "site de tema livre do curso de sistemas de informaçao",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
