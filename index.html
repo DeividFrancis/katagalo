@@ -4,17 +4,157 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="/css/master.css">
     <title>kata-galo</title>
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" > <!-- FONT- AWESOME -->
+    <!-- <link href="../css/css-geral.css" rel="stylesheet" type="text/css"/> -->
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Pacifico|Geo" rel="stylesheet">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
   </head>
   <body>
     <main>
       <header class="cabecario">
+        <div class="wrap">
+          <aside class="banner">
+            <div class="logo">
+              <img src=" " alt="katagalo">
+            </div>
+            <form class="busca" action="index.html" method="post">
+              <input type="text" name="" value="" placeholder="Olá, oque procua...">
+              <button type="button" name="button"><i class="fa fa-search"></i></button>
+            </form>
+            <div class="login">
+              <a href="#">Entre</a>
+              <a href="#">Cadastre-se</a>
+            </div>
+          </aside>
+        </div>
+        <nav class="menu-header">
 
+          <ul class="categoria wrap">
+            <li><a href="">Lanchonetes <i class="fa fa-caret-down"></i></a></li>
+            <li><a href="">Mercados <i class="fa fa-caret-down"></i></a></li>
+            <li><a href="">Fast Food <i class="fa fa-caret-down"></i></a></li>
+            <li><a href="">Confecções <i class="fa fa-caret-down"></i></a></li>
+            <li><a href="">Mais categorias <i class="fa fa-caret-down"></i></a></li>
+            <li><a href="" class="lista">caroo<i class="fa fa-tr"></i></a></li>
+          </ul>
+        </nav>
       </header>
-      <section class="box">
+      <div class="wrap links">
+        <span>inicio > lanchonetes > faceburg > lanches</span>
+      </div>
+      <section class="box wrap">
+          <aside class="filtro">
+            <nav class="sidbar">
+              <ul class="menu-sidbar">
+                <li><a href=""><span>Lanches</span><i class="fa fa-plus-square"></i></a></li>
+                <li><a href=""><span>Pizzas</span><i class="fa fa-plus-square"></i></a></li>
+                <li><a href=""><span>Sucos</span><i class="fa fa-plus-square"></i></a></li>
+                <li><a href=""><span>Refrigerantes</span><i class="fa fa-plus-square"></i></a></li>
+                <li><a href=""><span>Mais</span><i class="fa fa-plus-square"></i></a></li>
+              </ul>
+            </nav>
+          </aside>
+          <div class="conteudo">
+            <div class="bonitinho">
+              <header class="modo-grid">
+                <div class="numero-produtos">
+                  <p>666 produtos encontrados</p>
+                </div>
+                <div class="view">
+                  <button class="list" type="button" name="list"><i class="fa fa-th-list"></i></button>
+                  <button class="block" type="button" name="block"><i class="fa fa-th"></i></button>
+                </div>
+                <form class="ordem" action="index.html" method="post">
+                  <select class="tipo" name="classificar">
+                    <option value="Ordernar">Ordernar</option>
+                    <option value="MenorPreço">Menor Preço</option>
+                    <option value="MaiorPreço">Maior Preço</option>
+                    <option value="Populares">Populares</option>
+                    <option value="Promocao">Promoção</option>
+                  </select>
+                </form>
+              </header>
+              <div class="produtos">
+                <h1 class="titulo">Lanches</h1>
+              </div>
+            </div>
+              <ul class="lista">
+                <li class="produto">
+                  <figure class="img-produto">
+                    <!-- LINK DA IMAGEM -->
+                    <img src="imagens/x-tudo.png" alt="">
+                  </figure>
+                  <div class="nome-produto">
+                    <span>X-tudo</span><br>
+                    <span class="ingredientes">hamburg, bacon, milho, messarela, azeitonas, alface</span>
+                  </div>
+                  <div class="preco">
+                    <label>Por apenas:<br> </label><label class="rs">R$</label> <span class="reais">3</span><span class="cents">,99</span> <!--PREÇO DO PRODUTO-->
+                  </div>
+                  <div class="link">
+                    <!-- <a href="#" class="inf"><i class="fa fa-eye"></i>ver mais</a> -->
+                    <!--ADD A LISTA-->
+                    <a href="#" class="add"><i class="fa fa-heart-o"></i> add a lista</a><!--VER PRODUTO-->
+                  </div>
+                </li>
+                <li class="produto">
+                  <figure class="img-produto">
+                    <!-- LINK DA IMAGEM -->
+                    <img src="imagens/x-tudo.png" alt="">
+                  </figure>
+                  <div class="nome-produto">
+                    <span>X-tudo</span><br>
+                    <span class="ingredientes">hamburg, bacon, milho, messarela, azeitonas, alface</span>
+                  </div>
+                  <div class="preco">
+                    <label>R$</label> <span class="reais">3</span><span class="cents">,99</span> <!--PREÇO DO PRODUTO-->
+                  </div>
+                  <div class="link">
+                    <a href="#" class="add"><i class="fa fa-heart-o"></i> add a lista</a><!--VER PRODUTO-->
+                    <a href="#" class="inf"><i class="fa fa-eye"></i></a><!--ADD A LISTA-->
+                  </div>
+                </li>
+                <li class="produto">
+                  <figure class="img-produto">
+                    <!-- LINK DA IMAGEM -->
+                    <img src="imagens/x-tudo.png" alt="">
+                  </figure>
+                  <div class="nome-produto">
+                    <span>X-tudo</span><br>
+                    <span class="ingredientes">hamburg, bacon, milho, messarela, azeitonas, alface</span>
+                  </div>
+                  <div class="preco">
+                    <label>R$</label> <span class="reais">3</span><span class="cents">,99</span> <!--PREÇO DO PRODUTO-->
+                  </div>
+                  <div class="link">
+                    <a href="#" class="inf"><i class="fa fa-eye"></i></a><!--ADD A LISTA-->
+                    <a href="#" class="add"><i class="fa fa-heart-o"></i> add a lista</a><!--VER PRODUTO-->
+                  </div>
+                </li>
+                <li class="produto">
+                  <figure class="img-produto">
+                    <!-- LINK DA IMAGEM -->
+                    <img src="imagens/x-tudo.png" alt="">
+                  </figure>
+                  <div class="nome-produto">
+                    <span>X-tudo</span><br>
+                    <span class="ingredientes">hamburg, bacon, milho, messarela, azeitonas, alface</span>
+                  </div>
+                  <div class="preco">
+                    <label>R$</label> <span class="reais">3</span><span class="cents">,99</span> <!--PREÇO DO PRODUTO-->
+                  </div>
+                  <div class="link">
+                    <a href="#" class="inf"><i class="fa fa-eye"></i>ver mais</a><!--ADD A LISTA-->
+                    <a href="#" class="add"><i class="fa fa-heart-o"></i> add a lista</a><!--VER PRODUTO-->
+                  </div>
+                </li>
 
+
+              </ul>
+          </div>
       </section>
       <footer class="rodape">
-
+          <p>rodapee</p>
       </footer>
     </main>
 

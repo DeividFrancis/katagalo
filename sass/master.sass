@@ -1,1 +1,53 @@
+@import "atom/plugins"
+@import "atom/mixins"
+*
+  margin: 0
+  padding: 0
+  font-family: 'Roboto', 'arial'
+body
+  // font-size: em(20)
+  background-color: #eee
+a
+  text-decoration: none
+  display: block
 
+button
+  background-color: inherit
+  border: inherit
+  color: #ddd
+
+ul
+  list-style-type: none
+// .materia,
+// .titulo,
+// .sub-titulo,
+// .intro,
+// .logosi,
+// .title,
+//   font-family: 'open sans condensed'
+
+.wrap
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+.fa
+  padding: 0 8px
+
+.box
+  // padding: 40px 0
+  min-height: 90vh
+  width: 100%
+  +flexbox
+//   margin: 0 auto
+
+// .menuv
+  max-width: 100%
+// .td-conteudo
+  width: 100%
+// @import "bower_components/breakpoint-sass/stylesheets/breakpoint"
+
+@import "moleculas/menus"
+@import "moleculas/produtos-grid"
+@import "organismo/header"
+@import "organismo/conteudo"
+@import "organismo/footer"

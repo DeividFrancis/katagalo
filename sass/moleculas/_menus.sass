@@ -1,0 +1,44 @@
+@import "atom/mixins"
+
+// MENU DO TOPO HORIZONTAL
+.menu-header
+  width: 100%
+  background-color: $laranja-claro
+  +flexbox
+  justify-content: space-between
+  .categoria
+    +flexbox
+    width: 100%
+    justify-content: space-between
+  .lista
+  a
+
+    padding: 10px
+    color: $branco
+    &:hover
+
+      background-color: rgba($laranja, .3)
+
+.filtro
+  background-color: #fff
+  width: 30%
+  border-left: 1px solid $cinza-claro
+  border-right: 1px solid $cinza-claro
+  border-radius: 3px
+  .sidbar
+    margin: 10px
+    .menu-sidbar
+      // background-color: $branco
+      border-radius: 3px
+      li
+        a
+          text-transform: capitalize
+          padding: 15px 10px
+          border-bottom: 1px solid $cinza-claro
+          span
+            font-weight: bold
+
+          .fa
+            float: right
+          &:hover
+          color: $preto

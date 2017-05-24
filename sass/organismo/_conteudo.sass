@@ -1,0 +1,50 @@
+@import "atom/mixins"
+.bonitinho
+  background-color: #fff
+  border-radius: 3px
+  border: 1px solid $cinza-claro
+.links
+  padding: 10px 0 20px
+  span
+    +font-size(12)
+    color: $preto
+.conteudo
+  width: 100%
+  // background-color: #fff
+  margin: 0 10px
+  border-radius: 3px
+
+.modo-grid
+  +flexbox
+  justify-content: space-between
+  padding: 15px 
+  // margin: 0 30px
+  border-bottom: 1px solid $cinza-claro
+  .numero-produtos
+    color: $preto
+    // font-weight:
+  .view
+    .list,
+    .block
+      color: $preto
+      +font-size(22)
+      border-radius: 3px
+      &:hover
+        background-color: rgba($preto, .5)
+        color: $laranja
+    .list
+    .block
+  .ordem
+    border: 1px solid $preto
+    padding: 0
+    margin: 0
+    border-radius: 3px
+    select
+      border: 0
+      background: transparent
+    .tipo
+.produtos
+  .titulo
+    color: $preto
+    +font-size(30)
+    padding: 10px

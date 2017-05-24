@@ -1,0 +1,110 @@
+// MODO BLOCO
+// ===========================================
+.lista
+
+  height: 100%
+  +flexbox
+  // display: inline-block
+  // justify-content: center
+  .produto
+    // +flexbox
+    background-color: #fff
+    // flex-direction: column
+    // align-items: center
+    width: 50px
+    margin: 5px
+    padding: 10px
+    border: 1px solid $cinza-claro
+    border-radius: 3px
+    width: 200px
+    max-width: 100%
+    align-self: baseline
+    &:hover
+      -webkit-box-shadow: 0px 5px 0px 0px #bbb
+      -moz-box-shadow: 0px 5px 0px 0px #bbb
+      box-shadow: 0px 0px 5px 0px #bbb
+  .img-produto
+    background-color: #fff
+    text-align: center
+    &:hover
+      background-color: rgba(255,255,255, .8)
+    // max-width: 100%
+    // width: 100px
+    // height: 150px
+    img
+      padding: 20px 0
+      max-width: 150px
+  .nome-produto
+    color: #444
+    font-weight: bold
+    text-transform: uppercase
+    // float: left
+    .ingredientes
+      // display: none
+      +font-size(12)
+      text-transform: capitalize
+      color: #666
+      // width: 20px
+      font-weight: normal
+      // white-space: nowrap
+      // overflow: hidden
+  .preco
+    padding: 10px 0
+    +font-size(14)
+    color: #444
+    .rs,
+    .reais,
+    .cents
+      padding: 5px 0
+      background-color: transparent
+      color: #08c
+      font-weight: bold
+      +font-size(28)
+      &:hover
+        color: #08c
+      span
+      .reais
+      .cents
+  .link
+    // padding: 0 3px
+    width: 100%
+    // display: none
+    +flexbox
+    justify-content: space-between
+    .fa
+      padding: 0
+
+    .inf,
+    .add
+      +font-size(18)
+      // visibility: hidden
+      // display: none
+      padding: 5px
+      .fa
+        // display: block
+      &:hover
+        visibility: visible
+    .inf
+      margin: 3px 0
+      color: #08c
+      // color: #fff
+      // background-color: #009bdd
+      border-radius: 3px
+      // border: 1px solid #009bdd
+      &:hover
+        border: 1px solid #009bdd
+        color: #009bdd
+        background-color: #fff
+    .add
+      margin: 3px 0
+      color: #fff
+      background-color: #D8274D
+      border-radius: 3px
+      border: 1px solid #D8274D
+      &:hover
+        border: 1px solid #D8274D
+        background-color: #fff
+        color: #D8274D
+
+// MODO LISTA
+// =============================================
